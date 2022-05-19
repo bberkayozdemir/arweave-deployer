@@ -1,6 +1,6 @@
 {
   "name": "arweave-deployer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "directory and file uploader to arweave network",
   "main": "index.js",
   "scripts": {
