@@ -10,7 +10,7 @@ npm install arweave-deployer
 ## Usage
 
 ```js
-import ArweaveDeployer, { TxTags } from "./ArweaveDeployer.js"
+import ArweaveDeployer, { TxTags } from "arweave-deployer"
 
 //initalize
 var deployer = new ArweaveDeployer(Wallet, "arweave.net", 443, "https");
@@ -18,8 +18,8 @@ var deployer = new ArweaveDeployer(Wallet, "arweave.net", 443, "https");
 //load folder or file
 var txs = await deployer.load("./folder");
 
-//deploy
-var deploy = await deployer.deploy();
+//deploy 
+var deploy = await deployer.deploy(); /*returns {transactionId, [transactions]}*/
 
 //custom tags
 let tags = new TxTags();
